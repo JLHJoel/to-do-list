@@ -7,11 +7,6 @@
         <a href="{{ url_for('main.logout') }}" class="btn btn-logout top-logout">Cerrar Sesión</a>
     </div>
     
-    
-    <div class="quote-container">
-        <p class="quote">{{ quote }}</p>
-    </div>
-    
     <div class="add-task">
         <form method="POST" action="{{ url_for('main.add_task') }}">
             <input type="text" name="title" placeholder="Nueva tarea..." required>
